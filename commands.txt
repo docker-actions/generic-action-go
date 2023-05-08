@@ -1,1 +1,2 @@
 export IMAGE_NAME=gomarkdoc;           export IMAGE_TAG=0.4.1;    export REQUIRED_PACKAGES="github.com/princjef/gomarkdoc/cmd/gomarkdoc@v0.4.1"
+export IMAGE_NAME=swag;                export IMAGE_TAG=1.16.1;   export REQUIRED_PACKAGES="github.com/swaggo/swag/cmd/swag@v1.16.1"

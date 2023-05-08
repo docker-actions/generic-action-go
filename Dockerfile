@@ -11,7 +11,7 @@ RUN : "${ROOTFS:?Build argument needs to be set and non-empty.}"
 
 # Install pre-requisites
 RUN apk update \
-      && apk add --no-cache bash
+      && apk add --no-cache bash git
 
 # Build pre-requisites
 RUN bash -c 'mkdir -p ${ROOTFS}/{bin,sbin,usr/share,usr/bin,usr/sbin,usr/lib,/usr/local/bin,etc,container_user_home}'
