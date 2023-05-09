@@ -1,4 +1,4 @@
-#!/bin/bash -e
+#!/bin/bash -ex
 
 docker_org="${1}"
 tag="${2}"
@@ -28,6 +28,7 @@ for c in $(< commands.txt); do
     echo Building ${IMAGE_NAME}:${image_tag}
     docker buildx build \
       --build-arg REQUIRED_PACKAGES \
+      --build-arg GO_INSTALL \
 			--build-arg IMAGE_NAME \
 			--output "type=image,push=false" \
 			--tag ${docker_org}/${IMAGE_NAME}:${image_tag} \
