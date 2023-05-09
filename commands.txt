@@ -1,2 +1,5 @@
 export IMAGE_NAME=gomarkdoc;           export IMAGE_TAG=0.4.1;    export GO_INSTALL="github.com/princjef/gomarkdoc/cmd/gomarkdoc@v0.4.1";    export REQUIRED_PACKAGES=
-export IMAGE_NAME=swag;                export IMAGE_TAG=1.16.1;   export GO_INSTALL="github.com/swaggo/swag/cmd/swag@v1.16.1";               export REQUIRED_PACKAGES=go
+export IMAGE_NAME=swag;                export IMAGE_TAG=2.0.0rc3; export GO_INSTALL="github.com/swaggo/swag/v2/cmd/swag@v2.0.0-rc3";         export REQUIRED_PACKAGES="go git openssh-client-default"
+export IMAGE_NAME=gofumpt;             export IMAGE_TAG=0.5.0;    export GO_INSTALL="mvdan.cc/gofumpt@v0.5.0";                               export REQUIRED_PACKAGES=
+export IMAGE_NAME=gosimports;          export IMAGE_TAG=0.3.8;    export GO_INSTALL="github.com/rinchsan/gosimports/cmd/gosimports@v0.3.8";  export REQUIRED_PACKAGES=
+export IMAGE_NAME=goimports-reviser;   export IMAGE_TAG=3.3.1;    export GO_INSTALL="github.com/incu6us/goimports-reviser/v3@v3.3.1";        export REQUIRED_PACKAGES="go git openssh-client-default"
